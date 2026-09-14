@@ -1,0 +1,17 @@
+---
+description: >-
+  After every agent response, extract the current Cursor session and ingest
+  context/tokens/thinking into centralized-agent-data-api.
+alwaysApply: true
+---
+
+# Always ingest centralized agent data
+
+After every agent response (before ending the turn), run skill `ingest-cursor-session`.
+
+1. Resolve current composer/session UUID.
+2. Extract session JSON via `extract-session-logs.ps1`.
+3. Ingest into API (prefer MCP `ingest_session`, else HTTP POST).
+4. Report one short ok/fail line.
+
+Do not skip. Do not wait for the user to ask.

@@ -1,0 +1,15 @@
+{
+  "name": "centralized-agent-data-plugin",
+  "displayName": "Centralized Agent Data",
+  "version": "1.0.0",
+  "description": "Forces agents to extract Cursor session JSON and ingest context/tokens/thinking into centralized-agent-data-api after every response.",
+  "author": {
+    "name": "Armin Dashti"
+  },
+  "license": "MIT",
+  "keywords": ["cursor", "sessions", "tokens", "thinking", "logging"],
+  "category": "developer-tools",
+  "tags": ["agent", "logging", "sessions"],
+  "skills": "./skills/",
+  "rules": "./rules/"
+}
